@@ -1,0 +1,113 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- BACKGROUND --- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* 🖼️ Replace with your background image */
+  background: url("your-background.jpg") no-repeat center center/cover;
+}
+
+/* --- CONTAINER --- */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.signup-box {
+  background: url(IMAGES/background.jpg) no-repeat center center/cover;
+  background-position: top;
+  background-size: 410px;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- HEADER --- */
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 70px;
+}
+
+.tagline {
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* --- FORM --- */
+.signup-form .input-group {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 6px 0;
+}
+
+.signup-form .input-group i {
+  color: #777;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.signup-form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  color: #333;
+}
+
+.signup-form input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #155fc2;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 25px 20px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .signup-form .input-group i {
+    font-size: 13px;
+  }
+}

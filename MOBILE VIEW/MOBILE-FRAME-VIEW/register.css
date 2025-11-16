@@ -1,0 +1,104 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- BACKGROUND --- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+/* --- CONTAINER --- */
+.login-container {
+   
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box {
+  background: url(IMAGES/background.jpg) no-repeat center center/cover;
+  background-size: 360px;
+  background-position: top;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- TOP SECTION --- */
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 70px;
+}
+
+.tagline {
+  text-align: center;
+  display: flex;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* --- FORM STYLES --- */
+.login-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #1a73e8;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #155fc2;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 25px 20px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 9px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Certificate Request</title>
+  <link rel="stylesheet" href="Certificate.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-btn">←</button>
+      <h1>Certificate Request</h1>
+    </div>
+
+    <div class="form-section">
+      <p class="form-note"><b>
+        Please review your details before submitting.<br />
+        Make sure all information is correct.
+      </b>
+      </p>
+
+  <form id="certificate-form">
+        <label for="date"><b>Date</b></label>
+        <input type="date" id="date" name="date" />
+
+        <label for="doc-type"><b>Document Type</b></label>
+        <select id="doc-type" name="doc-type">
+          <option value="" disabled selected>Select One</option>
+          <option value="tor">TOR</option>
+          <option value="cog">COG</option>
+          <option value="cod">COD</option>
+        </select>
+
+        <label for="time"> <b>Time</b></label>
+        <input type="time" id="time" name="time" />
+
+        <label for="purpose"><b>Purpose</b></label>
+        <input type="text" id="purpose" placeholder="e.g. Scholarship" />
+
+        <button type="submit" class="request-btn">Request Document</button>
+      </form>
+    </div>
+
+    <div class="pending-section">
+      <h2>Pending Requests</h2>
+      <table>
+          <thead>
+            <tr>
+            <th>Date</th>
+            <th>Document Type</th>
+            <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="pending"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="pending"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="pending"></td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+  </body>
+    <script src="Certificate-request.js"></script>
+  </html>
+</body>
+</html>
